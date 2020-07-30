@@ -7,8 +7,8 @@ public class BitShifter {
 		int numShifted = num << 1;
 		
 		// 2. Print the value of numShifted, and convert that value to binary.
-		System.out.println(convertDecimalToBinary(num));
-		System.out.println(convertDecimalToBinary(numShifted));
+		//System.out.println(convertDecimalToBinary(num));
+		//System.out.println(convertDecimalToBinary(numShifted));
 		// 3. Compare the two binary values. Can you figure out what the << operator is for?
 		
 		// 4. Try shifting num 3 places.
@@ -20,7 +20,7 @@ public class BitShifter {
         do {
             // 1. Logical right shift by 1
             int quotient = decimalNum >>> 1;
-        
+       
             // 2. Check remainder and add '1' or '0'
             if( decimalNum % 2 != 0 ){
                 binaryStr = '1' + binaryStr;
@@ -34,5 +34,6 @@ public class BitShifter {
         } while( decimalNum != 0 );
         
         return binaryStr;
-    }
+        
+	}
 }
